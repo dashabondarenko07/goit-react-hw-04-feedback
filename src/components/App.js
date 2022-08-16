@@ -9,8 +9,8 @@ export default function App() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const onLeaveFeedback = key => {
-    switch (key.target.name) {
+  const onLeaveFeedback = option => {
+    switch (option.target.name) {
       case 'good':
         setGood(state => state + 1);
         break;
